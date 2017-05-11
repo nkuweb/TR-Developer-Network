@@ -11,7 +11,9 @@ def login():
 
 @web.route("/index",methods=["GET","POST"])
 def index():
+    if
     return render_template("index.html",login_data=request.form['uname'])
+
 
 if __name__ == "__main__":
     web.run(debug=True)
